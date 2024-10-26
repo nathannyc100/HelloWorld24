@@ -18,7 +18,7 @@ export default function App() {
         }}
       >
         <Stack.Screen name="Home" component={HomePage} />
-        <Stack.Screen name="Edit Profile" component={EditProfile} />>
+        <Stack.Screen name="Edit Profile" component={EditProfile} />
       </Stack.Navigator>
     </NavigationContainer>
   );

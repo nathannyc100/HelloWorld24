@@ -8,7 +8,7 @@ export default function HomePage() {
 
   const handleSubmit = () => {
     console.log("Going to edit profile page...");
-    navigation.navigate("React Native Maps");
+    navigation.navigate("Edit Profile");
   };
 
   return (
