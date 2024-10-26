@@ -11,12 +11,21 @@ export default function HomePage() {
     navigation.navigate("Edit Profile");
   };
 
+  const openCamera = () => {
+    navigation.navigate("Camera Page");
+  }
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>pee tracker</Text>
       <View style={styles.buttonContainer}>
         <CustomButton
           onPress={handleSubmit}
+          title={"Profile"}
+        />
+        <CustomButton
+          onPress={openCamera}
+          title={"Camera"}
         />
       </View>
     </View>

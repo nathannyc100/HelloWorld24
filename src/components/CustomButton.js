@@ -7,17 +7,11 @@ import { Text, Pressable, StyleSheet } from "react-native";
 // onPress: Function to call when the button is pressed
 // Example of using CustomButton by passing in props from the parent component:
 // <CustomButton initialText="Submit" updatedText="Submitting..." onPress={handleSubmit} />
-const CustomButton = ({ initialText, updatedText, onPress }) => {
-  const [buttonText, setButtonText] = useState(initialText);
-
-  const handlePress = () => {
-    setButtonText(updatedText);
-    onPress();
-  };
+const CustomButton = ({ title, onPress }) => {
 
   return (
-    <Pressable style={styles.button} onPress={handlePress}>
-      <Text style={styles.buttonText}>{buttonText}</Text>
+    <Pressable style={styles.button} onPress={onPress}>
+      <Text style={styles.buttonText}>{title}</Text>
     </Pressable>
   );
 };

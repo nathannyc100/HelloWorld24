@@ -5,6 +5,8 @@ import { createStackNavigator } from "@react-navigation/stack";
 // Pages
 import HomePage from "./src/screens/HomePage";
 import EditProfile from "./src/screens/EditProfile";
+import CameraPage from "./src/screens/CameraPage";
+import CheckColor from "./src/screens/CheckColor";
 
 export default function App() {
   const Stack = createStackNavigator();
@@ -19,6 +21,8 @@ export default function App() {
       >
         <Stack.Screen name="Home" component={HomePage} />
         <Stack.Screen name="Edit Profile" component={EditProfile} />
+        <Stack.Screen name="Camera Page" component={CameraPage} />
+        <Stack.Screen name="Check Color" component={CheckColor} />
       </Stack.Navigator>
     </NavigationContainer>
   );
